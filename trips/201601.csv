@@ -1,0 +1,16 @@
+Datum,Check-in,Vertrek,Check-uit,Bestemming,Bedrag,Transactie,Product
+08-01-2016,21:00,Den Haag Centraal,21:42,Amsterdam Zuid,"6,10",Check-in,Dal Voordeel (2e klas)
+10-01-2016,14:08,Amsterdam Zuid,14:57,Den Haag Centraal,"6,10",Check-in,Dal Voordeel (2e klas)
+12-01-2016,13:47,Den Haag Centraal,14:29,Wilhelminaplein,"4,75",Check-in,
+12-01-2016,14:53,Wilhelminaplein,15:34,Den Haag Centraal,"3,86",Check-in,
+22-01-2016,14:52,Den Haag Centraal,15:41,Amsterdam Zuid,"6,10",Check-in,Dal Voordeel (2e klas)
+23-01-2016,15:45,Amsterdam Zuid,16:36,Haarlem,"3,70",Check-in,Dal Voordeel (2e klas)
+23-01-2016,18:09,Haarlem,19:12,Amsterdam Zuid,"3,70",Check-in,Dal Voordeel (2e klas)
+24-01-2016,12:10,Corn. Schuytstraat,12:28,Centraal Station,"1,48",Check-in,
+24-01-2016,12:28,Amsterdam Centraal,13:12,Hoorn,"4,90",Check-in,Dal Voordeel (2e klas)
+24-01-2016,13:17,"Hoorn, Station",13:53,"Andijk, Kleingouw","3,75",Check-in,
+24-01-2016,16:02,"Andijk, Kleingouw",16:38,"Hoorn, Station","3,77",Check-in,
+24-01-2016,16:39,Hoorn,18:18,Den Haag Centraal,"10,00",Check-in,Dal Voordeel (2e klas)
+26-01-2016,17:50,Den Haag Centraal,18:35,Woerden,"8,30",Check-in,Dal Voordeel (2e klas)
+26-01-2016,20:31,Woerden,21:26,Den Haag Centraal,"5,00",Check-in,Dal Voordeel (2e klas)
+27-01-2016,12:37,Den Haag Centraal,13:12,Schiphol Airport,"5,00",Check-in,Dal Voordeel (2e klas)

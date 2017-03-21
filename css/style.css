@@ -1,0 +1,29 @@
+body {
+  font-family: 'Ubuntu Mono';
+  height: calc(100vh - 16px);
+  font-size: 20px;
+}
+
+path {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+#info {
+	height: 70px;
+}
+
+#cost-wrapper {
+	float: right;
+}
+
+#to {
+	float: right;
+}
+
+svg {
+  max-height: calc(100vh - 86px);
+  position: absolute;
+  max-width: 90%;
+}

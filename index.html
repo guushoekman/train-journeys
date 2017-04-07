@@ -246,16 +246,22 @@
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="js/trips.js"></script>
 <script>
-    var i = -1;
-    var totalCost = 0
+  var i = -1;
+  var totalCost = 0
 
-    var pathSpeed = 500
-    var fadeSpeed = pathSpeed / 10
-    var intervalTime = pathSpeed + fadeSpeed
+  var pathSpeed = 700
+  var fadeSpeed = pathSpeed / 10
+  var intervalTime = pathSpeed + fadeSpeed
 
-  window.setInterval(function(){
+  var chooChoo = window.setInterval(draw, intervalTime);
+
+  function draw () {
     i += 1;
     totalCost += trip[i].cost;
+
+    if (i === trip.length - 1) {
+      pause()
+    }
 
     $("#date").text(trip[i].date)
     $("#from").text(trip[i].from)
@@ -263,12 +269,13 @@
     $("#trip-cost").text(trip[i].cost.toFixed(2))
     $("#total-cost").text(totalCost.toFixed(2))
 
+
     var line = d3.svg.line()
 
     var route = d3.select("#map").append("svg")
       .datum(trip[i].route)
       .attr("viewBox", '0 0 500 590')
-      .attr("id", "route")
+      .attr("class", "single-route")
 
     route.append("path")
       .attr("d", line)
@@ -293,6 +300,11 @@
         $(this).remove();
       });
     }
-  }, intervalTime);
+
+  }
+
+  function pause() {
+    clearInterval(chooChoo);
+  }
 
 </script>

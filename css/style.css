@@ -46,26 +46,33 @@ path {
 }
 
 svg#map path {
-  fill: #dddddd;
-  stroke: #ffffff;
+  fill: #ddd;
+  stroke: #fff;
   stroke-width: 1px;
 }
 
 svg#map path.dijk {
   stroke-width: 0.5px;
-  stroke: #dddddd;
+  stroke: #ddd;
 }
 
 svg#map path.icon {
-  fill: #000000;
+  fill: #000;
   stroke-width: 0;
 }
 
 svg#map text {
   font-family: "Ubuntu Mono", monospace;
   font-size: 14px;
+  color: #000;
 }
 
 svg circle {
-  fill: #000000;
+  fill: #000;
+}
+
+.path-route {
+  fill: none !important;
+  stroke: #000 !important;
+  stroke-width: 1.8px !important;
 }

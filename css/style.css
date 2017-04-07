@@ -31,22 +31,22 @@ svg {
 }
 
 svg#map path {
-  fill:#dddddd;
-  stroke:#ffffff;
-  stroke-width: 1;
+  fill: #dddddd;
+  stroke: #ffffff;
+  stroke-width: 1px;
 }
 
 svg#map path.icon {
-  fill:#000000;
+  fill: #000000;
+  stroke-width: 0;
 }
 
-svg#map tspan {
+svg#map text {
   font-family: "Ubuntu Mono", monospace;
   font-size: 18px;
 }
 
 svg circle {
-  fill:#000000;
-  fill-opacity:1;
+  fill: #000000;
 }
 

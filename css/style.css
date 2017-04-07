@@ -9,19 +9,6 @@ body {
   max-width: 600px;
 }
 
-@media (min-width: 600px) {
-  body {
-    font-size: 20px;
-  }
-  svg#map text {
-    font-size: 18px;
-  }
-  #map, #info {
-    margin: 0 calc(50vw - 300px);
-    padding: 0;
-  }
-}
-
 #map {
   max-height: calc(100vh - 86px);
   position: absolute;
@@ -63,7 +50,7 @@ svg#map path.icon {
 
 svg#map text {
   font-family: "Ubuntu Mono", monospace;
-  font-size: 14px;
+  font-size: 18px;
   color: #000;
 }
 
@@ -75,4 +62,14 @@ svg circle {
   fill: none !important;
   stroke: #000 !important;
   stroke-width: 1.8px !important;
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 20px;
+  }
+  #map, #info {
+    margin: 0 calc(50vw - 300px);
+    padding: 0;
+  }
 }

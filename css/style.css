@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
 body {
   font-family: 'Ubuntu Mono';
   height: calc(100vh - 16px);
@@ -27,3 +29,24 @@ svg {
   position: absolute;
   max-width: 90%;
 }
+
+svg#map path {
+  fill:#dddddd;
+  stroke:#ffffff;
+  stroke-width: 1;
+}
+
+svg#map path.icon {
+  fill:#000000;
+}
+
+svg#map tspan {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 18px;
+}
+
+svg circle {
+  fill:#000000;
+  fill-opacity:1;
+}
+

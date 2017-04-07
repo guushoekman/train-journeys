@@ -3,7 +3,7 @@
 body {
   font-family: 'Ubuntu Mono';
   height: calc(100vh - 16px);
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 path {
@@ -34,6 +34,11 @@ svg#map path {
   fill: #dddddd;
   stroke: #ffffff;
   stroke-width: 1px;
+}
+
+svg#map path.dijk {
+  stroke-width: 0.5px;
+  stroke: #dddddd;
 }
 
 svg#map path.icon {

@@ -3,13 +3,25 @@
 body {
   font-family: 'Ubuntu Mono';
   height: calc(100vh - 16px);
-  font-size: 2vw;
+  font-size: 20px;
 }
 
-path {
-  fill: none;
-  stroke: #000;
-  stroke-width: 2px;
+#map, #info {
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+@media (min-width: 600px) {
+  #map, #info {
+    margin: 0 calc(50vw - 300px);
+    padding: 0 0;
+  }
+}
+
+
+#map {
+  max-height: calc(100vh - 86px);
+  position: absolute;
 }
 
 #info {
@@ -24,10 +36,10 @@ path {
 	float: right;
 }
 
-svg {
-  max-height: calc(100vh - 86px);
-  position: absolute;
-  max-width: 90%;
+path {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
 }
 
 svg#map path {

@@ -28,14 +28,16 @@
     <div id="info">
       <div><span id="date">date</span><span id="cost-wrapper">+ €<span id="trip-cost">0</span> = €<span id="total-cost">0</span></span></div>
       <div><span id="from">origin</span><span id="to">destination</span></div>
+      <div id="progress-bar"></div>
+      <div id="contact">
+        <a href="https://github.com/guushoekman/train-journeys">GitHub</a>
+        <a href="https://guushoekman.com">Contact me</a>
+      </div>
     </div>
 
-    <div id="contact">
+    <div id="end-message">
       <a href="https://github.com/guushoekman/train-journeys">GitHub</a>
       <a href="https://guushoekman.com">Contact me</a>
-    </div>
-
-    <div id="reload">
       <a href="#" onclick="window.location.reload();">Restart</a>
     </div>
 
@@ -271,10 +273,9 @@
   var i = -1;
   var totalCost = 0
 
-  var pathSpeed = 500
+  var pathSpeed = 400
   var fadeSpeed = pathSpeed / 5
   var intervalTime = pathSpeed + fadeSpeed
-
   var chooChoo = setInterval(draw, intervalTime);
 
   function draw () {
@@ -321,6 +322,9 @@
       $(".path-route").fadeOut(fadeSpeed, function(){
         $(this).remove();
       });
+      var progressParent = $("#progress-bar").parent().width();
+      var progressWidth = progressParent / trip.length * (i + 1);
+      $("#progress-bar").width(progressWidth)
     }
   }
 
@@ -329,10 +333,9 @@
     clearInterval(chooChoo);
     var averageCost = totalCost / trip.length;
     $("#info").html("<span>Between " + trip[0].date + " and " + trip[trip.length-1].date + ", I spent <b>€" + totalCost.toFixed(2) + " on " + trip.length + " train journeys</b>. That's an average of <b>€" + averageCost.toFixed(2) + " per journey</b>.</span>");
-    $("#info").css("font-size", "17px");
-    $("#contact").css("font-size", "17px");
     $("#map").fadeTo(1000, 0.4);
-    $("#reload").fadeIn(1000);
+    $("#end-message").fadeIn(1000);
+    ga('send', 'event', 'reached-end');
   }
 
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

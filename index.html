@@ -4,11 +4,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My train journeys, visualised using D3">
+    <meta name="author" content="Guus Hoekman">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="guushoekman.com | Train journeys">
+    <meta name="twitter:description" content="My train journeys, visualised using D3">
+    <meta name="twitter:image" content="https://guushoekman.com/img/train-journeys.png">
+
+    <meta property="og:title" content="guushoekman.com | Train journeys" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://guushoekman.com/train-journeys" />
+    <meta property="og:image" content="https://guushoekman.com/img/train-journeys.png" />
+    <meta property="og:description" content="My train journeys, visualised using D3" />
+
     <link rel="icon" href="favicon.png">
     <title>Train journeys</title>
-
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
   </head>
 
   <body>
@@ -17,6 +29,16 @@
       <div><span id="date">date</span><span id="cost-wrapper">+ €<span id="trip-cost">0</span> = €<span id="total-cost">0</span></span></div>
       <div><span id="from">origin</span><span id="to">destination</span></div>
     </div>
+
+    <div id="contact">
+      <a href="https://github.com/guushoekman/train-journeys">GitHub</a>
+      <a href="https://guushoekman.com">Contact me</a>
+    </div>
+
+    <div id="reload">
+      <a href="#" onclick="window.location.reload();">Restart</a>
+    </div>
+
     <svg id="map" viewBox="0 0 500 590">
       <path
          id="path17"
@@ -249,11 +271,11 @@
   var i = -1;
   var totalCost = 0
 
-  var pathSpeed = 700
-  var fadeSpeed = pathSpeed / 10
+  var pathSpeed = 10
+  var fadeSpeed = pathSpeed / 5
   var intervalTime = pathSpeed + fadeSpeed
 
-  var chooChoo = window.setInterval(draw, intervalTime);
+  var chooChoo = setInterval(draw, intervalTime);
 
   function draw () {
     i += 1;
@@ -300,11 +322,24 @@
         $(this).remove();
       });
     }
-
   }
+
 
   function pause() {
     clearInterval(chooChoo);
+    var averageCost = totalCost / trip.length;
+    $("#info").html("<span>Between " + trip[0].date + " and " + trip[trip.length-1].date + ", I spent <b>€" + totalCost.toFixed(2) + " on " + trip.length + " train journeys</b>. That's an average of <b>€" + averageCost.toFixed(2) + " per journey</b>.</span>");
+    $("#info").css("font-size", "17px");
+    $("#contact").css("font-size", "17px");
+    $("#map").fadeTo(1000, 0.4);
+    $("#reload").fadeIn(1000);
   }
 
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90365352-7', 'auto');
+  ga('send', 'pageview');
 </script>

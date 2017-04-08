@@ -5,13 +5,21 @@ body {
   font-size: 16px;
 }
 
-#map, #info {
+#map, #info, #contact {
   max-width: 600px;
+  margin: 0 10px;
 }
 
 #map {
   max-height: calc(100vh - 86px);
   position: absolute;
+  pointer-events: none;
+}
+
+#contact {
+  font-size: 10px;
+  margin-top: -20px !important;
+  height: 20px;
 }
 
 #info {
@@ -68,8 +76,16 @@ svg circle {
   body {
     font-size: 20px;
   }
-  #map, #info {
+  #map, #info, #contact {
     margin: 0 calc(50vw - 300px);
     padding: 0;
   }
+}
+
+#reload {
+  display: none;
+  position: absolute;
+  top: 30vh;
+  left: 20vw;
+  font-size: 17px;
 }

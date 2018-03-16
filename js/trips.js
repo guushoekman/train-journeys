@@ -110,11 +110,11 @@ var rotterdamToDenHaag = [
 	[139,	342],
 	[138,	335],
 	[135,	331],
-	[133, 329],	
-	[128, 318],	
-	[128, 312],	
-	[131, 310],	
-	[128, 307],	
+	[133, 329],
+	[128, 318],
+	[128, 312],
+	[131, 310],
+	[128, 307],
 ]
 
 var denHaagToAmersfoort = [
@@ -143,7 +143,7 @@ var denHaagToAmersfoort = [
 ]
 
 var amersfoortToWageningen = [
-	[262, 295],     
+	[262, 295],
 	[265, 294],
 	[270, 290],
 	[282, 293],
@@ -289,7 +289,7 @@ var delftToAdam = [
 	[205, 249],
 ]
 
-var denHaagToMaastricht = [ 
+var denHaagToMaastricht = [
 	[128, 308],
 	[135, 313],
 	[141, 315],
@@ -471,7 +471,7 @@ var denHaagToAdam = [
 	[ 205 , 249 ],
 ]
 
-var denHaagToDelftZuid = [ 
+var denHaagToDelftZuid = [
 	[ 128 , 307 ],
 	[ 131 , 310 ],
 	[ 128 , 312 ],
@@ -502,7 +502,7 @@ var denHaagToSchiphol = [
 	[ 190 , 259 ],
 ]
 
-var schipholToDenHaag = [ 
+var schipholToDenHaag = [
 	[ 190 , 259 ],
 	[ 182 , 265 ],
 	[ 177 , 266 ],
@@ -515,7 +515,7 @@ var schipholToDenHaag = [
 	[ 127 , 307 ],
 ]
 
-var adamZuidToSchiphol = [ 
+var adamZuidToSchiphol = [
 	[200, 255],
 	[193, 256],
 	[190, 259],
@@ -566,19 +566,19 @@ var hoornToDenHaag = [
 	[191,	233],
 	[192,	235],
 	[196,	239],
-	[196, 245],	
-	[187, 247],	
-	[184, 246],	
-	[172, 247],	
-	[170, 246],	
-	[168, 246],	
-	[163, 263],	
-	[151, 277],	
-	[152, 283],	
-	[153, 289],	
-	[141, 303],	
-	[131, 310],	
-	[127, 307],	
+	[196, 245],
+	[187, 247],
+	[184, 246],
+	[172, 247],
+	[170, 246],
+	[168, 246],
+	[163, 263],
+	[151, 277],
+	[152, 283],
+	[153, 289],
+	[141, 303],
+	[131, 310],
+	[127, 307],
 ]
 
 var hoornToAdam = [
@@ -646,17 +646,17 @@ var arenaToDenHaag = [
 	[209,	262],
 	[206,	258],
 	[202,	256],
-	[200, 255],	
-	[193, 256],	
-	[182, 265],	
-	[177, 266],	
-	[164, 279],	
-	[160, 279],	
-	[152, 283],	
-	[153, 289],	
-	[141, 303],	
-	[131, 310],	
-	[127, 308],	
+	[200, 255],
+	[193, 256],
+	[182, 265],
+	[177, 266],
+	[164, 279],
+	[160, 279],
+	[152, 283],
+	[153, 289],
+	[141, 303],
+	[131, 310],
+	[127, 308],
 ]
 
 var adamZuidToHaarlem = [
@@ -685,7 +685,7 @@ var haarlemToAdamZuid = [
 	[ 200 , 255 ],
 ]
 
-var denHaagToBoskoop = [        
+var denHaagToBoskoop = [
 	[ 128 , 308 ],
 	[ 135 , 313 ],
 	[ 141 , 315 ],
@@ -790,18 +790,18 @@ var alphenToDenHaag = [
 ]
 
 var trip = [
-	{ 
+	{
 	  "route": denHaagToAdamZuid,
 	  "date": "2015-03-27",
 	  "from": "Den Haag Centraal",
 	  "to": "Amsterdam Zuid",
 	  "cost": 5.90
 	},
-	{ 
+	{
 	  "route": delftToDenHaag,
 	  "date": "2015-03-30",
 	  "from": "Delft",
-	  "to": "Den Haag Centraal", 
+	  "to": "Den Haag Centraal",
 	  "cost": 1.4
 	},
 	{
@@ -816,7 +816,7 @@ var trip = [
 		"date": "2015-03-31",
 		"from": "Amersfoort",
 		"to": "Ede-Wageningen",
-		"cost": 6.53 
+		"cost": 6.53
 	},
 	{
 		"route": wageningenToDenHaag,
@@ -865,35 +865,35 @@ var trip = [
 		"date": "2015-04-13",
 		"from": "Den Haag Centraal",
 		"to": "Maastricht",
-		"cost": 15.1 
+		"cost": 15.1
 	},
 	{
 		"route": maastrichtToDenHaag,
 		"date": "2015-04-16",
 		"from": "Maastricht",
 		"to": "Den Haag Centraal",
-		"cost": 15.1 
+		"cost": 15.1
 	},
 	{
 		"route": denHaagToWageningen,
 		"date": "2015-04-17",
 		"from": "Den Haag Centraal",
 		"to": "Ede-Wageningen",
-		"cost": 10 
+		"cost": 10
 	},
 	{
 		"route": denHaagToMaastricht,
 		"date": "2015-04-22",
 		"from": "Den Haag Centraal",
 		"to": "Maastricht",
-		"cost": 15.1 
+		"cost": 15.1
 	},
 	{
 		"route": maastrichtToDenHaag,
 		"date": "2015-04-24",
 		"from": "Maastricht",
 		"to": "Den Haag Centraal",
-		"cost": 15.1 
+		"cost": 15.1
 	},
 	{
 		"route": denHaagToAdam,
@@ -977,14 +977,14 @@ var trip = [
 		"date": "2015-05-23",
 		"from": "Den Haag Centraal",
 		"to": "Maastricht",
-		"cost": 9.5 
+		"cost": 9.5
 	},
 	{
 		"route": maastrichtToDenHaag,
 	  "date": "2015-05-29",
 	  "from": "Maastricht",
 	  "to": "Den Haag Centraal",
-	  "cost": 15.1 
+	  "cost": 15.1
 	},
 	{
 		"route": denHaagToSchiphol,
@@ -1005,7 +1005,7 @@ var trip = [
 		"date": "2015-07-15",
 		"from":"Den Haag Centraal",
 		"to":"Haarlem",
-		"cost":4.9  
+		"cost":4.9
 	},
 	{
 		"route": haarlemToDenHaag,
@@ -1014,7 +1014,7 @@ var trip = [
 		"to":"Den Haag Centraal",
 		"cost":4.9
 	},
-	{ 
+	{
 		"route": denHaagToAdamZuid,
 		"date": "2015-07-20",
 		"from": "Den Haag Centraal",
@@ -1033,7 +1033,7 @@ var trip = [
 		"date": "2015-07-24",
 		"from": "Utrecht Centraal",
 		"to": "Den Haag Centraal",
-		"cost": 6.4  
+		"cost": 6.4
 	},
 	{
 		"route": denHaagToSchiphol,
@@ -1211,7 +1211,7 @@ var trip = [
 		"cost":4.9
 	},
 	{
-		"route": denHaagToAdamZuid,	
+		"route": denHaagToAdamZuid,
 		"date": "2015-09-25",
 		"from":"Den Haag Centraal",
 		"to":"Amsterdam Zuid",
@@ -1622,5 +1622,82 @@ var trip = [
 		"from":"Den Haag Centraal",
 		"to":"Schiphol",
 		"cost":5.0
+	},
+	{
+		"route": schipholToDenHaag,
+		"date": "2017-05-29",
+		"from":"Schiphol",
+		"to":"Den Haag Centraal",
+		"cost":5.0
+	},
+	{
+		"route": denHaagToSchiphol,
+		"date": "2017-06-16",
+		"from":"Den Haag Centraal",
+		"to":"Schiphol",
+		"cost":5.0
+	},
+	{
+		"route": schipholToDenHaag,
+		"date": "2017-05-25",
+		"from":"Schiphol",
+		"to":"Den Haag Centraal",
+		"cost":5.0
+	},
+	{
+		"route": denHaagToSchiphol,
+		"date": "2017-08-27",
+		"from":"Den Haag Centraal",
+		"to":"Schiphol",
+		"cost":5.0
+	},
+	{
+		"route": schipholToDenHaag,
+		"date": "2018-01-31",
+		"from":"Schiphol",
+		"to":"Den Haag Centraal",
+		"cost":5.1
+	},
+	{
+		"route": denHaagToDelft,
+		"date": "2018-02-01",
+		"from":"Den Haag Centraal",
+		"to":"Delft",
+		"cost":2.5
+	},
+	{
+		"route": delftToDenHaag,
+		"date": "2018-02-01",
+		"from":"Delft",
+		"to":"Den Haag Centraal",
+		"cost":1.5
+	},
+	{
+		"route": denHaagToDelft,
+		"date": "2018-02-08",
+		"from":"Den Haag Centraal",
+		"to":"Delft",
+		"cost":2.5
+	},
+	{
+		"route": delftToDenHaag,
+		"date": "2018-02-08",
+		"from":"Delft",
+		"to":"Den Haag Centraal",
+		"cost":1.5
+	},
+	{
+		"route": delftZuidToDenHaag,
+		"date": "2018-02-13",
+		"from":"Delft Zuid",
+		"to":"Den Haag Centraal",
+		"cost":1.6
+	},
+	{
+		"route": denHaagToSchiphol,
+		"date": "2018-02-14",
+		"from":"Den Haag Centraal",
+		"to":"Schiphol",
+		"cost":5.1
 	},
 ]
